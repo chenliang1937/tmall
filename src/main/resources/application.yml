@@ -1,0 +1,18 @@
+server:
+  port: 7777
+spring:
+  datasource:
+    name: mmall
+    url: jdbc:mysql://127.0.0.1:3306/mmall?characterEncoding=UTF-8&useSSL=false
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.jdbc.Driver
+mybatis:
+  mapper-locations: classpath:mapping/*.xml
+  type-aliases-package: com.tmall.pojo
+#pagehelper分页插件
+pagehelper:
+    helperDialect: mysql
+    reasonable: true
+    supportMethodsArguments: true
+    params: count=countSql
