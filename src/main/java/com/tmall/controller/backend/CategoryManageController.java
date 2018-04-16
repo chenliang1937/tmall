@@ -14,6 +14,9 @@ import org.springframework.web.bind.annotation.RestController;
 
 import javax.servlet.http.HttpSession;
 
+/**
+ * 分类管理模块
+ */
 @RestController
 @RequestMapping("/manage/category")
 public class CategoryManageController {
